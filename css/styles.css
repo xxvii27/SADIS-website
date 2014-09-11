@@ -1,8 +1,47 @@
 body{
     
     padding-bottom: 70px;
-    
 }
+
+#maincontent{}
+
+#mainimage > img{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#maincontent img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#sadis{
+    margin-top: 20%;
+}
+
+#bottomimg{
+    margin-top: 20px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.fullscreen-image {
+    z-index: -99;
+    position: relative;
+    display: block;
+}
+
+
+
+.slider_images
+{ 
+	margin-top: 100px;
+}
+
 
 #main{
 	display: block;
@@ -50,4 +89,23 @@ body{
 .page-header{
 
 	margin-top: 20%;
+	margin-left: 10%;
+}
+
+
+.page-content{
+	margin-left: 10%;
+}
+
+.row{
+    margin-left: 26px;
+}
+
+.desc{
+
+    margin-top: 100px;
+}
+
+.special{
+    margin-left: 60px;
 }

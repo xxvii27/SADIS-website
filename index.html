@@ -3,66 +3,111 @@
 <html>
 
 <head>
-<meta charset="utf-8">
-<meta name="description" content="San Diego Indonesian Student Association">
-<meta name="author" content="Louis Lesmana">
+    <meta charset="utf-8">
+    <meta name="description" content="San Diego Indonesian Student Association">
+    <meta name="author" content="Louis Lesmana">
 
-<title>SADIS - San Diego Indonesian Student Association</title>
+    <title>SADIS - San Diego Indonesian Student Association</title>
 
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/sadis.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <!-- Custom styles for Carousel -->
+    <!--    <link rel="stylesheet" href="css/demo.css" type="text/css" media="screen" /> -->
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+
+
+    <!-- Modernizr for Carousel -->
+    <script src="js/modernizr.js"></script>
+
 
 
 </head>
 
 <body>
 
-<div class="container" id="maincontent">
-  
+<div class='container' id="maincontent">
 
-    
+    <img id='sadis' class='img-responsive' src='img/sadis.png' alt='sadis' />
+    <!-- Carousel begins
+    <div class="slider_images" role="main">
+        <section class="slider">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li>
+                        <img  class="fullscreen-image" src="img/sadis.png" alt=""/>
+                    </li>
+                    <li>
+                        <img class="fullscreen-image"  src="img/bckg.jpg" alt=""/>
+                    </li>
+                    <li>
+                        <img class="fullscreen-image"  src="img/sadis.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
 
+    <script defer src="js/jquery.flexslider.js"></script>
+
+    <script type="text/javascript">
+        $(function(){
+            SyntaxHighlighter.all();
+        });
+        $(window).load(function(){
+            $('.flexslider').flexslider({
+                animation: "slide",
+                start: function(slider){
+                    $('body').removeClass('loading');
+                }
+            });
+        });
+    </script>
+
+    <script src="js/jquery.easing.js"></script>
+    <script src="js/jquery.mousewheel.js"></script>
+    <script defer src="js/demo.js"></script>  -->
 
 </div>
 
-
-
 <footer>
-<!-- Fixed navbar -->
+
+    <!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav ">
+                    <li><a class="navbar-brand" href="index.html" id='home'>SADIS</a></li>
+                    <li><a href="about.html" id='about'>About Us</a></li>
+                    <li><a href="officer.html" id='officer'>Officers</a></li>
+                    <li><a href="events.html" id='events'>Events</a></li>
+                    <li><a href="gallery.html" id='gallery'>Gallery</a></li>
+                    <li><a href="contact.html" id='contact'>Contact Us</a></li>
+                </ul>
+                <!--
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="../navbar/">Default</a></li>
+                  <li><a href="../navbar-static-top/">Static top</a></li>
+                  <li class="active"><a href="./">Fixed top</a></li>
+                </ul>
+              </div>
+              -->
+            </div>
         </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav ">
-            <li><a class="navbar-brand" href="#" id='home'>SADIS</a></li>
-            <li><a href="#about" id='about'>About Us</a></li>
-            <li><a href="#officer" id='officer'>Officers</a></li>
-            <li><a href="#events" id='events'>Events</a></li>
-            <li><a href="#gallery" id='gallery'>Gallery</a></li>
-            <li><a href="#contactus" id='contact'>Contact Us</a></li>
-          </ul>
-          <!--
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="../navbar/">Default</a></li>
-            <li><a href="../navbar-static-top/">Static top</a></li>
-            <li class="active"><a href="./">Fixed top</a></li>
-          </ul>
-        </div>
-        -->
-      </div>
     </div>
-   </div>
+   
 </footer>
 
 
