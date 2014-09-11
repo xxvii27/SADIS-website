@@ -9,6 +9,8 @@ body{
   display: block;
   margin-right: auto;
   margin-left: auto;
+  height: auto;
+  width: 2000px;
 }
 
 #maincontent img {
@@ -22,6 +24,13 @@ body{
 }
 
 #bottomimg > img{
+    margin-top: 25px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#bottom_link > a > img{
     margin-top: 25px;
     display: block;
     margin-right: auto;
