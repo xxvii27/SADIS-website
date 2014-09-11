@@ -1,6 +1,7 @@
 body{
     
     padding-bottom: 70px;
+    font-family: "calibri";
 }
 
 #maincontent{}
@@ -10,7 +11,7 @@ body{
   margin-right: auto;
   margin-left: auto;
   height: auto;
-  width: 2000px;
+  width: 100%;
 }
 
 #maincontent img {
@@ -59,6 +60,70 @@ body{
 	margin-top: 20%;
 }
 
+
+.navbar-default {
+    background-color: #2574A9;
+    border-color: #f0a12f;
+}
+.navbar-default .navbar-brand {
+    color: #ffd700;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: #fdfff6;
+}
+.navbar-default .navbar-text {
+    color: #ffd700;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #ffd700;
+    font-weight: bold;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #fdfff6;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #fdfff6;
+    background-color: #f0a12f;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    color: #fdfff6;
+    background-color: #f0a12f;
+}
+.navbar-default .navbar-toggle {
+    border-color: #f0a12f;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #f0a12f;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ffd700;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border-color: #ffd700;
+}
+.navbar-default .navbar-link {
+    color: #ffd700;
+}
+.navbar-default .navbar-link:hover {
+    color: #fdfff6;
+}
+
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #ffd700;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #fdfff6;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #fdfff6;
+        background-color: #f0a12f;
+    }
+}
+
+
+
 .navbar-fixed-top {
     min-height: 100px;
 }
@@ -68,6 +133,20 @@ body{
     padding-bottom: 0px;
     line-height: 100px;
 }
+
+a#home.navbar-brand{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 100px;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+
+.navbar-nav > li:hover{
+    background-color: goldenrod;
+}
+
 
 @media (min-width: 768px) {
 
@@ -93,6 +172,12 @@ body{
 		    padding-bottom: 10px;
 	}
 
+    a#home.navbar-brand{
+        line-height: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
 }
 
 .page-header{
@@ -116,5 +201,5 @@ body{
 }
 
 .special{
-    margin-left: 60px;
+    margin-right: 55px;
 }
