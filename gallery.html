@@ -11,7 +11,30 @@
     <link rel="stylesheet" href="css/styles.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+    <!-- Optionally add helpers - button, thumbnail and/or media -->
+    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+    <script type="text/javascript">
+        window.onload = function(){
+            $(document).ready(function() {
+                $(".fancybox").fancybox({
+                        openEffect	: 'none',
+                        closeEffect	: 'none'});
+            });
+        }
+    </script>
 
 
 </head>
@@ -33,7 +56,7 @@
                 <li><a href="about.html" id='about'>About Us</a></li>
                 <li><a href="officer.html" id='officer'>Officers</a></li>
                 <li><a href="events.html" id='events'>Events</a></li>
-                <li><a href="gallery.html" id='gallery'>Gallery</a></li>
+                <li><a class="activeLink" href="gallery.html" id='gallery'>Gallery</a></li>
                 <li><a href="contact.html" id='contact'>Contact Us</a></li>
                 <li><a href="alumni.html" id='alummni'>Alumni</a></li>
             </ul>
@@ -52,6 +75,142 @@
     </figure>
 </div>
 
+<div class='container' id="maincontent" style="margin-top: 25px;">
+
+    <div class="row">
+
+        <div class="col-md-4">
+
+            <a href="#cny2014" data-toggle="modal" data-target="#cny2014"><img  style="width: 350px; height:262px; border: 2px solid #ffffff;"
+                            src="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xfa1/v/t1.0-9/1780656_10152233835851458_1862762959_n.jpg?oh=cceddfba9c5fb4161018856b79f32329&oe=5495D9BE&__gda__=1419591362_d90fe621dc619382076b64b06c64bfe4" alt="">
+            </a>
+            <a href="#cny2014" data-toggle="modal" data-target="#cny2014"><h1 class="caption">Chinese New Year Dinner 2014</h1></a>
+        </div>
+
+        <div class="col-md-4">
+
+            <a href="#welcoming2013" data-toggle="modal" data-target="#welcoming2013"><img style="width: 350px; height:262px; border: 2px solid #ffffff;"
+                            src="https://scontent-a-sjc.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/1380239_10151939491439976_659134649_n.jpg?oh=43a29e4c4086c59e468657ed3b56decf&oe=549EDFC3" alt="">
+            </a>
+            <a href="#welcoming2013" data-toggle="modal" data-target="#welcoming2013"><h1 class="caption">Welcoming Party 2013</h1></a>
+        </div>
+
+        <div class="col-md-4">
+
+            <a href="#prom2013" data-toggle="modal" data-target="#prom2013"><img style="width: 350px; height:262px; border: 2px solid #ffffff;"
+                            src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xpf1/t31.0-8/980840_10200629886323163_639424321_o.jpg" alt="">
+            </a>
+            <a href="#prom2013" data-toggle="modal" data-target="#prom2013"><h1 class="caption">Prom Night 2013</h1></a>
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="modal fade bs-example-modal-lg" id="cny2014" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel1">Chinese New Year 2014</h4>
+            </div>
+            <div class="modal-body">
+                <a class="fancybox" rel="gallery1" href="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xfa1/v/t1.0-9/1780656_10152233835851458_1862762959_n.jpg?oh=cceddfba9c5fb4161018856b79f32329&oe=5495D9BE&__gda__=1419591362_d90fe621dc619382076b64b06c64bfe4" title="1">
+                    <img style="width: 250px; height: 187px;" src="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xfa1/v/t1.0-9/1780656_10152233835851458_1862762959_n.jpg?oh=cceddfba9c5fb4161018856b79f32329&oe=5495D9BE&__gda__=1419591362_d90fe621dc619382076b64b06c64bfe4" alt="" />
+                </a>
+                <a class="fancybox" rel="gallery1" href="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/1601588_10152233835906458_1368007776_n.jpg?oh=48c4e16b28b2b5fc6f288b49c86888b9&oe=5492E438&__gda__=1419537890_fb1d717a19fcf130536f089af021c120" title="2">
+                    <img style="width: 250px; height: 187px;" src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/1601588_10152233835906458_1368007776_n.jpg?oh=48c4e16b28b2b5fc6f288b49c86888b9&oe=5492E438&__gda__=1419537890_fb1d717a19fcf130536f089af021c120" alt="" />
+                </a>
+                <a class="fancybox" rel="gallery1" href="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-9/1625524_10152233836001458_1314548036_n.jpg?oh=3656eaa97e25a45bdfae43421e246935&oe=549B993F&__gda__=1422639072_2efdd5653b0d7b01655f46cb9014bb17" title="3">
+                    <img style="width: 250px; height: 187px;" src="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-9/1625524_10152233836001458_1314548036_n.jpg?oh=3656eaa97e25a45bdfae43421e246935&oe=549B993F&__gda__=1422639072_2efdd5653b0d7b01655f46cb9014bb17" alt="">
+                </a>
+                <a class="fancybox" rel="gallery1" href="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/1653309_10152233836071458_1875040485_n.jpg?oh=ac7220f103444ea01b651e643e75382b&oe=549CE9EC&__gda__=1418616118_d74d9f348739468013af43f66d47a754" title="4">
+                    <img style="width: 250px; height: 187px;" src="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/1653309_10152233836071458_1875040485_n.jpg?oh=ac7220f103444ea01b651e643e75382b&oe=549CE9EC&__gda__=1418616118_d74d9f348739468013af43f66d47a754" alt="">
+                </a>
+                <a class="fancybox" rel="gallery1" href="https://scontent-a-lax.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/1549576_10152233836196458_1422322712_n.jpg?oh=0ee35253d2b6d3cd541857a033c4ce19&oe=5483F6B5" title="5">
+                    <img style="width: 250px; height: 187px;" src="https://scontent-a-lax.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/1549576_10152233836196458_1422322712_n.jpg?oh=0ee35253d2b6d3cd541857a033c4ce19&oe=5483F6B5" alt="">
+                </a>
+                <a class="fancybox" rel="gallery1" href="https://scontent-a-lax.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/1800464_10152233836251458_110509355_n.jpg?oh=ddd9c389dbf9b3689bd72909ec5e3301&oe=54932FED" title="6">
+                    <img style="width: 250px; height: 187px;" src="https://scontent-a-lax.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/1800464_10152233836251458_110509355_n.jpg?oh=ddd9c389dbf9b3689bd72909ec5e3301&oe=54932FED" alt="">
+                </a>
+                <a class="fancybox" rel="gallery1" href="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xaf1/v/t1.0-9/1796697_10152233836381458_1943634694_n.jpg?oh=252fe038d3dd59ee3f1564d1fa175797&oe=5492621D&__gda__=1419537683_b9fa5ad5046c0fbd748c78a6397ca732" title="7">
+                    <img style="width: 250px; height: 187px;" src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xaf1/v/t1.0-9/1796697_10152233836381458_1943634694_n.jpg?oh=252fe038d3dd59ee3f1564d1fa175797&oe=5492621D&__gda__=1419537683_b9fa5ad5046c0fbd748c78a6397ca732" alt="">
+                </a>
+                <a class="fancybox" rel="gallery1" href="https://scontent-b-lax.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/1601588_10152233836456458_1291212242_n.jpg?oh=15a32a80571769ebd0ef780e44753697&oe=54A1C1E3" title="8">
+                    <img style="width: 250px; height: 187px;" src="https://scontent-b-lax.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/1601588_10152233836456458_1291212242_n.jpg?oh=15a32a80571769ebd0ef780e44753697&oe=54A1C1E3" alt="">
+                </a>
+                <a class="fancybox" rel="gallery1" href="https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-9/1391869_10152233836531458_1786827253_n.jpg?oh=f32ded2b69cdeec3fb7bd20d3448dda3&oe=549A8C4F&__gda__=1418114192_8eed3a852375c0b2f3c9987daab35ca6" title="9">
+                    <img style="width: 250px; height: 187px;" src="https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-9/1391869_10152233836531458_1786827253_n.jpg?oh=f32ded2b69cdeec3fb7bd20d3448dda3&oe=549A8C4F&__gda__=1418114192_8eed3a852375c0b2f3c9987daab35ca6" alt="">
+                </a>
+                <a class="fancybox" rel="gallery1" href="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/1797427_10152233836636458_1360390799_n.jpg?oh=2fa331d1f508d85c44b7fd1726ea97ba&oe=549E3568&__gda__=1419260610_36ef9c7502ec56ca6db7685ab5a57dda" title="10">
+                    <img style="width: 250px; height: 187px;" src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/1797427_10152233836636458_1360390799_n.jpg?oh=2fa331d1f508d85c44b7fd1726ea97ba&oe=549E3568&__gda__=1419260610_36ef9c7502ec56ca6db7685ab5a57dda" alt="">
+                </a>
+                <a class="fancybox" rel="gallery1" href="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/1014033_10152233836721458_1537558572_n.jpg?oh=6fdd63d9ee88914c10f6c3e894540836&oe=548E021D&__gda__=1418751175_9fc110c3a535deb95bf3eedbcacccbea" title="11">
+                    <img style="width: 250px; height: 187px;" src="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/1014033_10152233836721458_1537558572_n.jpg?oh=6fdd63d9ee88914c10f6c3e894540836&oe=548E021D&__gda__=1418751175_9fc110c3a535deb95bf3eedbcacccbea" alt="">
+                </a>
+                <a class="fancybox" rel="gallery1" href="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-9/1236996_10152233836776458_733011058_n.jpg?oh=9f7f19faedfd2023917358f827a756c9&oe=549E643E&__gda__=1419536869_217843696fd97874e5e91f0837fce964" title="12">
+                    <img style="width: 250px; height: 187px;" src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-9/1236996_10152233836776458_733011058_n.jpg?oh=9f7f19faedfd2023917358f827a756c9&oe=549E643E&__gda__=1419536869_217843696fd97874e5e91f0837fce964" alt="">
+                </a>
+                <a class="fancybox" rel="gallery1" href="https://scontent-a-lax.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/1606922_10152233836836458_1171235068_n.jpg?oh=99c313d36dec957e171fd1d79a26a3e7&oe=548FAEA5" title="13">
+                    <img style="width: 250px; height: 187px;" src="https://scontent-a-lax.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/1606922_10152233836836458_1171235068_n.jpg?oh=99c313d36dec957e171fd1d79a26a3e7&oe=548FAEA5" alt="">
+                </a>
+                <a class="fancybox" rel="gallery1" href="https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-9/1511733_10152233836936458_240174897_n.jpg?oh=b5b80cd2f6fcb3eac8b7cc97a0b645d8&oe=54954CEE&__gda__=1419473205_de3a86588f50567cc8a6557144ebb86f" title="14">
+                    <img style="width: 250px; height: 187px;" src="https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-9/1511733_10152233836936458_240174897_n.jpg?oh=b5b80cd2f6fcb3eac8b7cc97a0b645d8&oe=54954CEE&__gda__=1419473205_de3a86588f50567cc8a6557144ebb86f" alt="">
+                </a>
+                <a class="fancybox" rel="gallery1" href="https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-9/1549569_10152233836981458_179076756_n.jpg?oh=2f1f6dfb835e64edf84551ab8299938f&oe=54931CA9&__gda__=1419080818_192ed89d3354933e03a7f65c54252632" title="15">
+                    <img style="width: 250px; height: 187px;" src="https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-9/1549569_10152233836981458_179076756_n.jpg?oh=2f1f6dfb835e64edf84551ab8299938f&oe=54931CA9&__gda__=1419080818_192ed89d3354933e03a7f65c54252632" alt="">
+                </a>
+                <a class="fancybox" rel="gallery1" href="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xpf1/v/t1.0-9/1005365_10152233837106458_1514354556_n.jpg?oh=91679bc44a4acf03aeecacc040439c61&oe=54D1452E&__gda__=1417881587_b5f19a493d771ac2468a7c3f07d31bf6" title="16">
+                    <img style="width: 250px; height: 187px;" src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xpf1/v/t1.0-9/1005365_10152233837106458_1514354556_n.jpg?oh=91679bc44a4acf03aeecacc040439c61&oe=54D1452E&__gda__=1417881587_b5f19a493d771ac2468a7c3f07d31bf6" alt="">
+                </a>
+                <a class="fancybox" rel="gallery1" href="https://scontent-b-lax.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/1601046_10152233837226458_1166638342_n.jpg?oh=084d1b2eb24f6ba05880755a080a519a&oe=549EC8A7" title="17">
+                    <img style="width: 250px; height: 187px;" src="https://scontent-b-lax.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/1601046_10152233837226458_1166638342_n.jpg?oh=084d1b2eb24f6ba05880755a080a519a&oe=549EC8A7" alt="">
+                </a>
+                <a class="fancybox" rel="gallery1" href="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/1551746_10152233837306458_1639048149_n.jpg?oh=bacce10640a2fc36729afef8a7aecd67&oe=549046B8&__gda__=1419458914_f2eba3d90d2e49227188df874945f8ec" title="18">
+                    <img style="width: 250px; height: 187px;" src="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/1551746_10152233837306458_1639048149_n.jpg?oh=bacce10640a2fc36729afef8a7aecd67&oe=549046B8&__gda__=1419458914_f2eba3d90d2e49227188df874945f8ec" alt="">
+                </a>
+                <a class="fancybox" rel="gallery1" href="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-9/1546456_10152233837401458_1077895040_n.jpg?oh=ce4890ed8d81d435ada7cdef86fa7306&oe=54860EEF&__gda__=1417991472_dff2d9962c6aaeaec042cccc0e8db0e6" title="19">
+                    <img style="width: 250px; height: 187px;" src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-9/1546456_10152233837401458_1077895040_n.jpg?oh=ce4890ed8d81d435ada7cdef86fa7306&oe=54860EEF&__gda__=1417991472_dff2d9962c6aaeaec042cccc0e8db0e6" alt="">
+                </a>
+                <a class="fancybox" rel="gallery1" href="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xaf1/v/t1.0-9/1795567_10152233837456458_263687887_n.jpg?oh=be2ace9e4208760bc0861dac19e99b29&oe=54A0C15B&__gda__=1419105488_07d27d043a6b4110405ff3e5628cf2db" title="20">
+                    <img style="width: 250px; height: 187px;" src="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xaf1/v/t1.0-9/1795567_10152233837456458_263687887_n.jpg?oh=be2ace9e4208760bc0861dac19e99b29&oe=54A0C15B&__gda__=1419105488_07d27d043a6b4110405ff3e5628cf2db" alt="">
+                </a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade bs-example-modal-lg" id="welcoming2013" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel2">Welcoming Party 2013</h4>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade bs-example-modal-lg" id="prom2013" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel3">Prom 2013</h4>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+        </div>
+    </div>
+</div>
 
 <footer>
     <div class="container">

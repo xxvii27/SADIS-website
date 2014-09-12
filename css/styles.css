@@ -131,6 +131,7 @@ body{
     line-height: 100px;
 }
 
+
 a#home.navbar-brand{
     padding-top: 0px;
     padding-bottom: 0px;
@@ -151,6 +152,14 @@ ul.nav a:hover {
     color: #2574a9 !important;
     font-size: 36px;
     font-weight: bold;
+    border-bottom: 5px solid #ffd700;
+}
+
+.activeLink {
+    color: #2574a9 !important;
+    font-size: 36px !important;
+    font-weight: bold !important;
+    border-bottom: 5px solid #ffd700;
 }
 
 @media (min-width: 768px) {
