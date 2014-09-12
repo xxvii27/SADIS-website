@@ -152,14 +152,14 @@ ul.nav a:hover {
     color: #2574a9 !important;
     font-size: 36px;
     font-weight: bold;
-    border-bottom: 5px solid #ffd700;
+    border-bottom: 10px solid #ffd700;
 }
 
 .activeLink {
     color: #2574a9 !important;
     font-size: 36px !important;
     font-weight: bold !important;
-    border-bottom: 5px solid #ffd700;
+    border-bottom: 10px solid #ffd700;
 }
 
 @media (min-width: 768px) {
@@ -231,4 +231,8 @@ footer{
 footer > .container {
     padding-right: 15px;
     padding-left: 15px;
+}
+
+.fancybox > img{
+    margin: 5px;
 }
