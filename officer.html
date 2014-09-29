@@ -14,13 +14,14 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src= "js/scrollfade.js"></script>
 
 
 </head>
 
 <body>
 <!-- Fixed navbar -->
-<div class="navbar navbar-default navbar-fixed" role="navigation">
+<div class="navbar navbar-default navbar-fixed fadein" role="navigation">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
@@ -50,49 +51,49 @@
           -->
         </div>
     </div>
-    <figure id="mainimage">
+    <figure id="mainimage" class="fadein">
         <img class='img-responsive' src='img/officers.jpg'  alt=''>
     </figure>
 </div>
 
 <div class='container' id="maincontent" style="margin-top: 25px;">
 
-    <div class="row">
+    <div class="row fadein">
         <div class="col-md-4">
-            <img class="img-responsive"  style="width: 139px; height: 140px;" src='img/officer2013-2014/icha.jpg' alt='' />
+            <img class="img-responsive enlarge"  style="width: 139px; height: 140px;" src='img/officer2013-2014/icha.png' alt='' />
             <p class="text-center">President<br/>Patricia Dewi<br/>Major: Chemistry<br/>Class of 2014<br/></p>
         </div>
         <div class="col-md-4">
-            <img class="img-responsive"  style="width: 139px; height: 140px;" src='img/officer2013-2014/melissa.jpg' alt='' />
+            <img class="img-responsive enlarge"  style="width: 139px; height: 140px;" src='img/officer2013-2014/mel.png' alt='' />
             <p class="text-center">Vice President<br/>Melissa Averina<br/>Major: Chemical Engineering<br/>Class of 2015<br/></p>
         </div>
         <div class="col-md-4">
-            <img class="img-responsive" style="width: 139px; height: 140px;" src='img/officer2013-2014/dian.jpg' alt='' />
+            <img class="img-responsive enlarge" style="width: 139px; height: 140px;" src='img/officer2013-2014/dian.png' alt='' />
             <p class="text-center">Treasurer<br/>Dian Suman<br/>Major: Nanoengineering<br/>Class of 2016<br/></p>
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-md-4"><img class="img-responsive"  src='img/officer2013-2014/reuben.jpg' alt='' />
+    <div class="row hideme">
+        <div class="col-md-4"><img class="img-responsive enlarge"  src='img/officer2013-2014/reuben.png' alt='' />
             <p class="text-center">Event Organizer<br/>Reuben David<br/>Major: Economics<br/>Class of 2014<br/></p>
         </div>
-        <div class="col-md-4"><img class="img-responsive"  src='img/officer2013-2014/yehfri.jpg' alt='' />
+        <div class="col-md-4"><img class="img-responsive enlarge"  src='img/officer2013-2014/yehfri.png' alt='' />
             <p class="text-center">Secretary<br/>Yehfri Saputra<br/>Major: Structural Engineering<br/>Class of 2015<br/></p>
         </div>
-        <div class="col-md-4"><img class="img-responsive" src='img/officer2013-2014/ribka.jpg' alt='' />
+        <div class="col-md-4"><img class="img-responsive enlarge" src='img/officer2013-2014/ribka.png' alt='' />
             <p class="text-center">Event Organizer<br/>Ribka Kartadinata<br/>Major: Chemical Engineering<br/>Class of 2014<br/></p>
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-lg-12"><img class="img-responsive"  src='img/officer2013-2014/yuli.jpg' alt='' />
+    <div class="row hideme">
+        <div class="col-lg-12"><img class="img-responsive enlarge"  src='img/officer2013-2014/yuli.png' alt='' />
             <p class="text-center">Event Organizer<br/>Yuli Hendrik<br/>Major: Economics<br/>Class of 2015<br/></p>
         </div>
     </div>
 
 </div>
 
-<footer>
+<footer class="hideme">
     <div class="container">
         <p class="pull-right"><a href="#">Back to top</a></p>
         <p>&copy; 2014 UCSD SADIS &middot; </p>
@@ -101,7 +102,7 @@
 
 </body>
 
-
+<script type="text/javascript">$(".fadein").hide(0).delay(100).fadeIn(1000);</script>
 
 
 
