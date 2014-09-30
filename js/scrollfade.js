@@ -15,6 +15,9 @@ $(window).scroll( function(){
             $(this).animate({'opacity':'1'},500);
 
         }
+       /* else if(bottom_of_window < bottom_of_object){
+            $(this).animate({'opacity':'0'},500);
+        }*/
 
     });
 

@@ -1,6 +1,13 @@
+@font-face {
+    font-family: Dense;
+    src: url(../fonts/Dense-Regular.otf);
+}
+
+
 body{
     
-    font-family: "Monaco";
+    font-family: "Dense";
+    font-size: 20pt;
 }
 
 #maincontent{}
@@ -64,6 +71,7 @@ body{
 .navbar-default .navbar-brand {
     color: #ffd700;
 }
+
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
     color: #fdfff6;
 }
@@ -136,7 +144,7 @@ a#home.navbar-brand{
     padding-bottom: 0px;
     line-height: 100px;
     font-weight: bold;
-    font-size: 36px;
+    font-size: 50pt;
 }
 
 a#home.navbar-brand:hover{
@@ -144,19 +152,19 @@ a#home.navbar-brand:hover{
 }
 
 ul.nav a{
-    font-size: 20px;
+    font-size: 30pt;
 }
 
 ul.nav a:hover {
     color: #2574a9 !important;
-    font-size: 36px;
+    font-size: 50pt;
     font-weight: bold;
     border-bottom: 10px solid #ffd700;
 }
 
 .activeLink {
     color: #2574a9 !important;
-    font-size: 36px !important;
+    font-size: 50pt !important;
     font-weight: bold !important;
     border-bottom: 10px solid #ffd700;
 }
@@ -208,16 +216,6 @@ ul.nav a:hover {
     margin-left: 26px;
 }
 
-.desc{
-
-    margin-top: 100px;
-}
-
-.special{
-    margin-right: 55px;
-}
-
-
 footer{
     margin-top: 70px;
     bottom: 0;
@@ -242,7 +240,7 @@ footer > .container {
 }
 
 .enlarge:hover{
-    z-index: 9999999999999;
+    z-index: 99999;
     -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
     -o-transform: scale(1.2);
@@ -251,3 +249,13 @@ footer > .container {
     -webkit-transition: all 0.3s;
 }
 
+.bg{
+    position: relative;
+}
+
+.text-justify{
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    width: 100%;
+}
