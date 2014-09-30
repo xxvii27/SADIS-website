@@ -259,3 +259,8 @@ footer > .container {
     left: 30px;
     width: 100%;
 }
+
+
+.modal-header  > h4 ,  .modal-footer > a > h5{
+    font-size: 40pt !important;
+}
