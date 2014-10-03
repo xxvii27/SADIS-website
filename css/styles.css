@@ -10,7 +10,6 @@ body{
     font-size: 20pt;
 }
 
-#maincontent{}
 
 #mainimage > img{
   display: block;
@@ -27,7 +26,8 @@ body{
 }
 
 #sadis{
-    margin-top: 20%;
+    margin-top: 15%;
+    position: absolute;
 }
 
 #bottomimg > img{
@@ -157,16 +157,16 @@ ul.nav a{
 
 ul.nav a:hover {
     color: #2574a9 !important;
-    font-size: 50pt;
+    font-size: 36pt;
     font-weight: bold;
-    border-bottom: 10px solid #ffd700;
+    border-bottom: 8px solid #ffd700;
 }
 
 .activeLink {
     color: #2574a9 !important;
-    font-size: 50pt !important;
+    font-size: 36pt !important;
     font-weight: bold !important;
-    border-bottom: 10px solid #ffd700;
+    border-bottom: 8px solid #ffd700;
 }
 
 @media (min-width: 768px) {
@@ -212,9 +212,6 @@ ul.nav a:hover {
 	margin-left: 10%;
 }
 
-.row{
-    margin-left: 26px;
-}
 
 footer{
     margin-top: 70px;
@@ -256,11 +253,52 @@ footer > .container {
 .text-justify{
     position: absolute;
     top: 100px;
-    left: 30px;
+    left: 100px;
     width: 100%;
+    color: #ffd700;
 }
 
 
 .modal-header  > h4 ,  .modal-footer > a > h5{
     font-size: 40pt !important;
 }
+
+.describe{
+    position: relative;
+    padding: 0;
+    display:block;
+}
+
+
+.describe > img{
+    z-index:1;
+}
+
+.text {
+    position: absolute;
+    top: 0;
+    margin-left: 29px;
+    color:white;
+    background-color:rgba(0,0,0,0.7);
+    width: 528px;
+    height: 368px;
+    line-height:100px;
+    text-align: center;
+    z-index: 10;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.text:hover {
+    opacity:1;
+
+}
+
+.text > p {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
