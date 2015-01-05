@@ -112,6 +112,7 @@ body{
 
 */
 
+/*Main navbar*/
 
 @media (max-width: 767px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
@@ -231,11 +232,13 @@ footer > .container {
     margin: 5px;
 }
 
+/* Hide object, prepare for JS action */
 .hideme
 {
     opacity:0;
 }
 
+/*Enlarge image on hover*/
 .enlarge:hover{
     z-index: 99999;
     -webkit-transform: scale(1.2);
